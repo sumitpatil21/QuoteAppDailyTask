@@ -24,7 +24,7 @@ class _QuotesFileState extends State<QuotesFile> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ...List.generate(quotesClass!.quotesList.length, (index) => ListTile(
-            title: Text(quotesClass!.quotesList[index].quotes!),
+            title: Text(quotesClass!.quotesList[index].quotesa!),
             subtitle: Text(quotesClass!.quotesList[index].author!),
           ))
         ],

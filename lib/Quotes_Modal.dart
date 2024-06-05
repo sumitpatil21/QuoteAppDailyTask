@@ -1,12 +1,12 @@
 class quotesclass{
-  String? quotes;
+  String? quotesa;
   String? author;
   List<quotesclass> quotesList=[];
-  quotesclass({this.quotes,this.author});
+  quotesclass({this.quotesa,this.author});
 
   factory quotesclass.from(Map m1)
   {
-    return quotesclass(author: m1["author"],quotes: m1["quotes"]);
+    return quotesclass(author: m1["author"],quotesa: m1["quotes"]);
   }
   quotesclass.toList(List l1)
   {

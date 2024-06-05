@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:quoteappdailytask/Dialogue_Box.dart';
 import 'package:quoteappdailytask/Quotes_Ui.dart';
 
+import 'Listview_to_Gridview.dart';
+
 void main()
 {
   runApp(DailyTask());
@@ -11,10 +13,8 @@ class DailyTask extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      routes: {
-      "/":(context) => QuotesFile(),
-      },
+    return const MaterialApp(
+     home: ListviewtoGridview(),
     );
   }
 }
