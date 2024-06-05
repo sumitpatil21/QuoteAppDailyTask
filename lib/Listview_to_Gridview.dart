@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:quoteappdailytask/Quotes_Modal.dart';
 import 'package:quoteappdailytask/quotes_json_file.dart';
@@ -23,9 +25,25 @@ class _ListviewtoGridviewState extends State<ListviewtoGridview> {
     // TODO: implement initState
     super.initState();
   }
+  Widget random_Funcat() {
+    int randomIndex = getRandomIndex();
+    return AlertDialog(
+      title: Text(quotesvar!.quotesList[randomIndex].quotesa!),
+      actions: [
+        TextButton(
+          onPressed: () {
+          Navigator.
+            of(context).pop();
+          },
+          child: Text('Close'),
+        ),
+      ],
+    );
+  }
 
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text(
@@ -51,8 +69,15 @@ class _ListviewtoGridviewState extends State<ListviewtoGridview> {
         ],
       ),
       body: (isGrid)?buildGridView():buildListView(),
+      floatingActionButton: FloatingActionButton(onPressed: () {
+       setState(() {
+        showDialog(context: context, builder:(context) => random_Funcat(),);
+       });
+      },backgroundColor: Colors.blue,),
     );
   }
+
+
 
   GridView buildGridView() {
     return GridView.builder(
@@ -60,19 +85,27 @@ class _ListviewtoGridviewState extends State<ListviewtoGridview> {
       gridDelegate:
           SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemBuilder: (context, index) => ListTile(
-        title: Text(quotesvar!.quotesList[index].quotesa!),
+        title: Text(quotesvar!.quotesList[index].quotesa!,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
+        subtitle: Text(quotesvar!.quotesList[index].author!,style: TextStyle(fontWeight: FontWeight.w700),),
       ),
     );
   }
 
   ListView buildListView() {
     return ListView.builder(
-      itemBuilder: (context, index) => ListTile(
-        title: Text("sumit"),
+      itemCount: quotesvar!.quotesList.length,
+      itemBuilder: (context, index) => Card(
+        child: ListTile(
+          title: Text(quotesvar!.quotesList[index].quotesa!,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),),
+          subtitle: Text(quotesvar!.quotesList[index].author!,style: TextStyle(fontWeight: FontWeight.w700),),
+        ),
       ),
     );
   }
 }
-
-int x = 1;
 bool isGrid = false;
+int getRandomIndex() {
+  return Random().nextInt(quotesvar!.quotesList.length);
+}
+
+
