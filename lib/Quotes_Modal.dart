@@ -6,7 +6,7 @@ class quotesclass{
 
   factory quotesclass.from(Map m1)
   {
-    return quotesclass(author: m1["author"],quotesa: m1["quotes"]);
+    return quotesclass(author: m1["author"],quotesa: m1["quote"]);
   }
   quotesclass.toList(List l1)
   {
