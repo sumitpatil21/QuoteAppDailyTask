@@ -2,11 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:quoteappdailytask/Quotes_Modal.dart';
 import 'package:quoteappdailytask/Quotes_Modal.dart';
 import 'package:quoteappdailytask/quotes_json_file.dart';
-
-import 'Quotes_Modal.dart';
-import 'Quotes_Modal.dart';
-import 'Quotes_Modal.dart';
-import 'Quotes_Modal.dart';
  quotesclass? quotesClass;
 class QuotesFile extends StatefulWidget {
   const QuotesFile({super.key});
@@ -28,7 +23,10 @@ class _QuotesFileState extends State<QuotesFile> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          ...List.generate(quotesclass.quotesList., (index) => null)
+          ...List.generate(quotesClass!.quotesList.length, (index) => ListTile(
+            title: Text(quotesClass!.quotesList[index].quotes!),
+            subtitle: Text(quotesClass!.quotesList[index].author!),
+          ))
         ],
       ),
     );
