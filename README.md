@@ -77,3 +77,18 @@ class Questions {
 ```
 
 
+https://github.com/sumitpatil21/QuoteAppDailyTask/assets/148967002/33a00301-717c-4ce6-beea-edfd0920ed41
+
+
+<p>
+        <img src="https://github.com/sumitpatil21/QuoteAppDailyTask/assets/148967002/e3639ada-1fb1-4a6c-acb3-77b83d0af470" alt="" height="10%" width="10%" ><br><br>
+        <img src="https://github.com/sumitpatil21/QuoteAppDailyTask/assets/148967002/d1dbe4a2-2e4d-4cab-8add-8421f2351365" alt="" height="10%" width="10%" ><br><br>
+        <img src="https://github.com/sumitpatil21/QuoteAppDailyTask/assets/148967002/d7730f3a-2a7a-4e88-a97e-190fd164a2e5" alt="" height="10%" width="10%" ><br><br>
+        <img src="https://github.com/sumitpatil21/QuoteAppDailyTask/assets/148967002/14950951-ee2d-4bcf-ba1f-21aa166e45f8" alt="" height="10%" width="10%" ><br><br>
+        <img src="https://github.com/sumitpatil21/QuoteAppDailyTask/assets/148967002/693bc6e7-6e1a-49d9-bce5-c0a35141ffe6" alt="" height="10%" width="10%" ><br><br>
+        <img src="https://github.com/sumitpatil21/QuoteAppDailyTask/assets/148967002/e5f72e22-1ba8-4106-9b0f-2c56b4659105" alt="" height="10%" width="10%" ><br><br>    
+        <img src="https://github.com/sumitpatil21/QuoteAppDailyTask/assets/148967002/b9960e4d-329e-447d-92bf-3005ffb06b7b" alt="" height="10%" width="10%" ><br><br>
+        <img src="https://github.com/sumitpatil21/QuoteAppDailyTask/assets/148967002/9bfa96b7-2a56-40bd-a3cf-dd35c2f7158f" alt="" height="10%" width="10%" ><br><br>   
+        
+   </p>
+
